@@ -1,5 +1,18 @@
+import { Divider } from "./components/Divider";
+import { RequestConfig } from "./components/RequestConfig";
+import { Requests } from "./components/Requests";
+import { Response } from "./components/Response";
+
 function App() {
-  return <h1>Hello World!!</h1>;
+  return (
+    <div className="flex flex-row">
+      <Requests />
+      <Divider />
+      <RequestConfig />
+      <Divider />
+      <Response />
+    </div>
+  );
 }
 
 export default App;
